@@ -1,0 +1,12 @@
+<div>
+  <p>{{ pokemon.id | number : '3.0-0' }}</p>
+  <p>{{ pokemon.nom }}</p>
+  <p>{{ pokemon.taille | number:'1.0-2' }} m</p>
+  <p>{{ pokemon.poids }}</p>
+  <img [src]="pokemon.image" alt="image">
+  <ul>
+    <li *ngFor="let categorie of pokemon.categories">
+      {{ categorie }}
+    </li>
+  </ul>
+</div>

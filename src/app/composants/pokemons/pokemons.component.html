@@ -1,5 +1,7 @@
-<div class="pokemons">
-  <div *ngFor="let pokemon of pokemons">
+
+
+<div class="pokemons" *ngIf="pokemons$ | async as resultatApi">
+  <div *ngFor="let pokemon of resultatApi.results">
     <app-pokemon [pokemon]="pokemon"></app-pokemon>
   </div>
 </div>

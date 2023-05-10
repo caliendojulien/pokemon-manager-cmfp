@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PokemonsComponent } from './composants/pokemons/pokemons.component';
 import { GenerationsComponent } from './composants/generations/generations.component';
 import { PokemonComponent } from './composants/pokemon/pokemon.component';
+import {NgOptimizedImage} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PokemonComponent } from './composants/pokemon/pokemon.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
